@@ -57,6 +57,7 @@ useEffect(()=>{
       if(eachProduct._id===params._id){
       setProduct(eachProduct);
       }
+      return
     });
   } )},[params._id]);
   
@@ -65,7 +66,7 @@ useEffect(()=>{
     <div className='container mx-auto mt-12'>
       <button className='font-bold bg-yellow-500 px-3 rounded-full hover:bg-yellow-700 mb-12 ' onClick={()=>{navigate(-1)}}>Back</button>
        <div className='flex '>
-        <img src={newduct.image} className='mr-8'></img>
+        <img src={newduct.image} className='mr-8' alt="not found"></img>
         <div>
           <h1 className='text-xl font-bold'>{newduct.name}</h1>
           <div className='text-md'>{newduct.size}</div>

@@ -2,7 +2,7 @@ import React from 'react'
 import Product from './Product';
 import { useEffect } from 'react';
 import { useState } from 'react';
-
+import data from '../data/db.json'
 
 
 const Products = () => {
@@ -10,17 +10,12 @@ const Products = () => {
 const [products,setProducts] = useState([]);
 
 useEffect(()=>{
-  fetch('http://localhost:8000/productinfo')
-    .then(res=>{
-   return res.json()
-  })
-    .then(products=>{
+
      // console.log(products[4]._id);
-    setProducts(products);
-  })
-    .catch(err=>{
-   //  console.log(err.message)
-  })
+    setProducts(data.productinfo);
+
+
+
 },[]);
  
   return (

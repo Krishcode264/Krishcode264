@@ -13,7 +13,7 @@ const Navigation = () => {
      <nav className='container  flex items-center justify-between py-4  '>
         
             <Link to="/">
-                <img style={{height:45}}src='/images/logo.png'></img>
+                <img style={{height:45}}src='/images/logo.png' alt="not found"></img>
             </Link>
             <ul className='flex items-center'>
               <li className='hover:text-blue-800 '><Link to="/">Home</Link></li>
