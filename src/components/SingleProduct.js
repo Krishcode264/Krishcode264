@@ -49,9 +49,9 @@ data.productinfo.map(eachProduct =>{
 
       if(eachProduct._id===params._id){
       setProduct(eachProduct);
-      return
+      return null
       }
-      return
+      return null
 
    } ) },[params._id]);
   

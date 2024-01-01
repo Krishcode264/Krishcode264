@@ -4,7 +4,6 @@ import { useContext } from "react";
 import { useEffect, useState } from "react";
 import data from "../data/db.json";
 
-
 const Cart = () => {
   // const {cart}=useContext(myCartContext);
   const [cartproducts, setcartproducts] = useState([]);
@@ -14,7 +13,7 @@ const Cart = () => {
   const [gotprice, togotprice] = useState(false);
 
   useEffect(() => {
-      const updatedarry = [];
+    const updatedarry = [];
     if (!cart.items) {
       return;
     }
@@ -25,6 +24,7 @@ const Cart = () => {
     console.log(cart.items);
 
     data.productinfo.map((product) => {
+
       for (let i = 0; i < cartarry.length; i++) {
         if (product._id === cartarry[i]) {
           updatedarry.unshift(product);
@@ -32,9 +32,9 @@ const Cart = () => {
       }
       setcartproducts(updatedarry);
       togotprice(true);
-      return
+      return null;
     });
-  }, [cart,gotprice]);
+  }, [cart, gotprice]);
 
   const incrementProduct = (e, cliclkedproductid) => {
     const oldQty = cart.items[cliclkedproductid];
