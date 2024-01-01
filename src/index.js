@@ -1,16 +1,19 @@
 import App from './App';
-
-const { render } = require("@testing-library/react");
-
-
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 
 
 
 
+   
 
 
-render(
-    <App/>, 
-    document.getElementById('root')
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
