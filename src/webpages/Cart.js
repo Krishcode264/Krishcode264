@@ -31,8 +31,9 @@ const Cart = () => {
       }
       setcartproducts(updatedarry);
       togotprice(true);
+      return
     });
-  }, [cart]);
+  }, [cart,gotprice,updatedarry]);
 
   const incrementProduct = (e, cliclkedproductid) => {
     const oldQty = cart.items[cliclkedproductid];

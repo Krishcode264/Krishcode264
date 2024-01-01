@@ -56,6 +56,7 @@ useEffect(()=>{
    data.map((eachProduct)=>{
       if(eachProduct._id===params._id){
       setProduct(eachProduct);
+      return
       }
       return
     });
