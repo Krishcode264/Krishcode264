@@ -8,12 +8,13 @@ import data from "../data/db.json";
 const Cart = () => {
   // const {cart}=useContext(myCartContext);
   const [cartproducts, setcartproducts] = useState([]);
-  const updatedarry = [];
+
   const { cart, setCart } = useContext(myCartContext);
   // console.log(typeof(cart.totalitems));
   const [gotprice, togotprice] = useState(false);
 
   useEffect(() => {
+      const updatedarry = [];
     if (!cart.items) {
       return;
     }
@@ -33,7 +34,7 @@ const Cart = () => {
       togotprice(true);
       return
     });
-  }, [cart,gotprice,updatedarry]);
+  }, [cart,gotprice]);
 
   const incrementProduct = (e, cliclkedproductid) => {
     const oldQty = cart.items[cliclkedproductid];

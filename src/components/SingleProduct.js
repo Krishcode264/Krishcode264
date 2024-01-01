@@ -3,7 +3,7 @@ import { useParams,useNavigate} from 'react-router-dom'
 import { useEffect } from 'react';
 import { myCartContext } from './CartContext';
 import { useContext } from 'react';
-
+import data from '../data/db.json'
 const SingleProduct = () => {
 const[newduct,setProduct]=useState({});
 const params=useParams();
@@ -45,22 +45,15 @@ setTimeout(() => {
 
   
 useEffect(()=>{
+data.productinfo.map(eachProduct =>{
 
-  fetch(`http://localhost:8000/productinfo`)
-
-  .then((res)=>{
-    return res.json();
-  })
-
-  .then((data)=> {
-   data.map((eachProduct)=>{
       if(eachProduct._id===params._id){
       setProduct(eachProduct);
       return
       }
       return
-    });
-  } )},[params._id]);
+
+   } ) },[params._id]);
   
 
   return (
