@@ -31,9 +31,11 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Krishcode264&show_icons=true&theme=tokyonight&hide_border=true&hide=issues" />
+<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Krishcode264&show_icons=true&theme=tokyonight&hide_border=true&hide=stars,issues" />
 
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Krishcode264&layout=compact&theme=tokyonight&hide_border=true" />
+<img height="165" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Krishcode264&layout=compact&theme=tokyonight&hide_border=true" />
+
+<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=Krishcode264&theme=tokyonight&hide_border=true" />
 
 </div>
 
