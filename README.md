@@ -12,9 +12,10 @@
 
 - 🔭 Currently building **Agentic AI Pipelines & MCP Integrations**
 - 🌱 Learning **Deep Learning & Transformers**
-- 🧠 Following Andrej Karpathy’s Neural Networks series
+- 🧠 Following Andrej Karpathy's Neural Networks series
 - 💬 Ask me about **JavaScript, AI Agents, Full Stack Development & 3D Modeling**
 - 🎨 Exploring **Blender, AI Workflows, and Creative Tech**
+- 🌐 Portfolio: [krishnazade.vercel.app](https://krishnazade.vercel.app/)
 - 📫 Reach me at: **krishnazade99@gmail.com**
 
 ---
